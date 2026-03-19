@@ -90,7 +90,7 @@ make build
 make up
 ```
 
-> **Access the app at:** [http://localhost:3000](http://localhost:3000)
+> **Access the app at:** http://localhost:PORT (e.g., http://localhost:3002 as set in .env)
 
 ---
 

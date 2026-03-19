@@ -8,7 +8,11 @@ const nextConfig = {
     // In Next.js 15, allowedDevOrigins is no longer experimental
     // but the error message suggests it's not in experimental.
     // If this fails, we will remove it.
-    allowedDevOrigins: ['localhost:3000', '0.0.0.0:3000', '127.0.0.1:3000'],
+    allowedDevOrigins: [
+        `localhost:${process.env.PORT}`,
+        `0.0.0.0:${process.env.PORT}`,
+        `127.0.0.1:${process.env.PORT}`,
+    ],
     images: {
         formats: ['image/avif', 'image/webp'],
     },
