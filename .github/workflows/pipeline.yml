@@ -119,6 +119,7 @@ jobs:
             set -e
 
             cd /var/www/flick-p2p-file-sharing
+            git pull origin main
 
             # Authenticate with GHCR to pull the private image
             echo "$GHCR_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
